@@ -1,0 +1,1148 @@
+Body{
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0px auto;
+    background: #09A2F9;
+    position: relative;
+}
+
+Body.overflow{
+    overflow: hidden;
+}
+
+.dark{
+    filter: brightness(40%);
+}
+
+.wrapper{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.wrapper.opacity > *:not(:first-child, :nth-child(3)){
+    filter: brightness(40%);
+}
+
+.wrapper.opacity_2{
+    filter: brightness(40%);
+}
+
+.wrapper.overflow{
+    overflow: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+input:focus{
+    border: 0.1px solid white;
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+@font-face{
+    font-family: "Agency FB bold";
+    src: url("../AgencyFB/agencyfb_bold.ttf");
+}
+
+@font-face{
+    font-family: "Agency FB";
+    src: url("../AgencyFB/agencyfb_reg.ttf");
+}
+
+@font-face{
+    font-family: "Russo One";
+    src: url("../Russo_One/RussoOne-Regular.ttf");
+}
+
+.container_{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.header{
+    background: #09A2F9;
+    //background: rgba(9, 162, 249, 0.6);
+    width: 100%;
+    height: 138px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu_burger_container{
+    position: fixed;
+    top: 110px;
+    left: -100%;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+    //background: #09A2F9;
+    background: green;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    transition: left 0.4s ease 0s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menu_burger_information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.menu_burger_information > *{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: #000;
+}
+
+.menu_burger_information > *:not(:last-child){
+    margin: 0px 0px 20px 0px;
+}
+
+.menu_burger_information_title{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline red;
+    -webkit-text-decoration: underline red;
+}
+
+.menu_burger_container.use{
+    left: 0;
+    transition: left 0.4s ease 0s;
+}
+
+.menu_burger_list_title{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline red;
+    -webkit-text-decoration: underline red;
+}
+
+.menu_burger_list_item_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px 0px;
+}
+
+.menu_burger_list_item_wrapper > *:not(:last-child){
+    margin: 0px 0px 40px 0px;
+}
+
+.menu_burger_list{
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_burger_list > *:not(:last-child){
+    margin: 0px 0px 40px 0px;
+}
+
+.menu_burger_list_link{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: white;
+}
+
+.menu_burger_list_link:hover{
+    text-decoration: underline;
+}
+
+.menu_burger_navigation > *:not(:last-child){
+    margin: 0px 0px 40px 0px;
+}
+
+.menu_burger_navigation_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px 0px;
+}
+
+.menu_burger_navigation_list > *:not(:last-child){
+    margin: 0px 0px 40px 0px;
+}
+
+.menu_burger_navigation_title{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline red;
+    -webkit-text-decoration: underline red;
+}
+
+.menu_burger_navigation_link{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: white;
+}
+
+.menu_burger_navigation_link:hover{
+    text-decoration: underline;
+}
+
+.header_button_link.pointer{
+    pointer-events: none;
+}
+
+.first_block_button_link.pointer{
+    pointer-events: none;
+}
+
+.header_logo{
+    position: relative;
+    left: 40px;
+    width: 251px;
+    height: 71px;
+}
+
+.header_logo_image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header_logo_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    margin: 0px 35px 0px 0px;
+    position: relative;
+    z-index: 4;
+}
+
+.header_menu > *:not(:last-child){
+    margin: 0px 30px 0px 0px;
+}
+
+.menu_list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu_list > *:not(:last-child){
+    margin: 0px 43px 0px 0px;
+}
+
+.menu_item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu_burger_information > *{
+    text-align: center;
+}
+
+.menu_burger_copyright{
+    font-family: "Agency FB bold";
+}
+
+.menu_burger_copyright > span{
+    font-family: "Russo One";
+}
+
+.menu_burger_phone_link{
+    font-family: "Agency FB bold";
+}
+
+.menu_burger_email_link{
+    font-family: "Agency FB bold";
+}
+
+.menu_burger_copyright > span{
+    font-family: "Russo One";
+}
+
+.menu_burger_navigation_link{
+    font-size: 20px;
+    font-family: "Russo One";
+    color: white;
+}
+
+.menu_burger_location_link{
+    font-size: 20px;
+    font-family: "Russo One";
+}
+
+.line{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 63%;
+    height: 0px;
+    background: rgba(250, 250, 250, 1);
+    border: 1px solid #FAFAFA;
+    margin: 0px 0px 0px 3px;
+    transition: all 0.2s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.line.show{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 63%;
+    height: 0px;
+    background: rgba(250, 250, 250, 1);
+    border: 1px solid #FAFAFA;
+    margin: 0px 0px 0px 3px;
+    transition: all 0.2s ease 0s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.link{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 29px;
+    color: white;
+}
+
+.menu_link{
+    font-family: "Russo One";
+}
+
+.button{
+    width: 218px;
+    height: 54px;
+    background: #FFE400;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_link{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_burger{
+    display: none;
+}
+
+.header_logo_inscription{
+    display: none;
+}
+
+.popup_wrapper{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    z-index: 12;
+    transform: translate(-50%, 0px);
+    width: 60%;
+    height: 300px;
+    background: green;
+    padding: 25px 30px;
+    transition: top 0.4s ease 0s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.popup_wrapper.show_popup{
+    transition: top 0.4s ease 0s;
+    top: 30%;
+}
+
+.popup_close_1{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup_close_1.change{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.popup_title{
+    font-size: 24px;
+    font-family: "Russo One";
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 10px 0px 25px 0px;
+    text-align: center;
+}
+
+.popup_logo_wrapper{
+    margin: 25px 0px 0px 0px;
+}
+
+.popup_button_close{
+    position: absolute;
+    top: -20px;
+    right: -25px;
+    width: 25px;
+    height: 25px;
+    background: red;
+}
+
+.popup_first_stick{
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: rotate(45deg);
+    position: relative;
+    top: 11px;
+}
+
+.popup_second_stick{
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 9px;
+}
+
+.popup_text{
+    font-size: 22px;
+    font-family: "Russo One";
+    line-height: 30px;
+}
+
+.popup_text > a{
+    font-family: "Agency FB bold";
+}
+
+.popup_logo_image{
+    filter: contrast(2000%);
+}
+
+@media (max-width: 1175px){
+    .menu_link{
+        margin: 10px 0px 0px 0px;
+    }
+    .menu_body{
+        position: relative;
+        left: 50px;
+    }
+}
+
+@media (max-width: 865px){
+    .menu_body{
+        position: relative;
+        left: 25px;
+    }
+    .menu_list > *:not(:last-child){
+        margin: 0px 20px 0px 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .header{
+        height: 109px;
+        background: rgba(9, 162, 249, 0.6);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+    .menu_body{
+        display: none;
+    }
+    .header_button_wrapper{
+        display: none;
+    }
+    .menu_burger{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .menu_burger > span{
+        width: 30.28px;
+        height: 2px;
+        background: white;
+        margin: 7px 0px 7px 0px;
+    }
+    .menu_burger:before{
+        content: "";
+        width: 30.28px;
+        height: 2px;
+        background: white;
+    }
+    .menu_burger:after{
+        content: "";
+        width: 21px;
+        height: 2px;
+        background: white;
+    }
+    .fourth_line{
+        width: 30.28px;
+        height: 2px;
+        background: white;
+        margin: 0px 0px 7px 0px;
+    }
+    .header_logo{
+        display: none;
+    }
+    .header_logo_inscription{
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 50px;
+        width: 100px;
+        height: 57px;
+    }
+    .header_logo_inscription_image{
+        position: relative;
+        z-index: 1;
+    }
+    .header_logo_inscription_link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 2;
+    }
+}
+
+.first_block{
+    width: 100%;
+    height: 647px;
+    background-image: url("../html_from_figma_5_imgs/contactos_main_image.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.first_block_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_block_title{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    font-family: "Russo One";
+    color: white;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .first_block{
+        height: 414px;
+    }
+    .first_block_title{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 564px){
+    .first_block_title{
+        font-size: 26px;
+        position: relative;
+        top: 120px;
+    }
+    .first_block{
+        height: 320px;
+    }
+}
+
+@media (max-width: 414px){
+    .first_block{
+        //height: 320px;
+    }
+}
+
+.separator{
+    width: 100%;
+    background: #09A2F9;
+    padding: 12px 0px;
+}
+
+.separator_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.separator_container > *:not(:last-child){
+    margin: 0px 65px 0px 0px;
+}
+
+.separator_text{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 57px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .separator_text{
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 350px){
+    .separator_text{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+.separator_image_text_wrapper{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator_image_text{
+    width: 100%;
+    height: 100%;
+}
+
+.separator_button_wrapper_wrapper{
+    padding-right: 10px;
+}
+
+@media (max-width: 925px){
+    .separator_text{
+        text-align: center;
+    }
+    .separator_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .separator_container > *:not(:last-child){
+        margin: 0px 0px 20px 0px;
+    }
+    .separator_button_wrapper{
+        margin: 0px;
+    }
+    .separator_button_wrapper_wrapper{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .separator{
+        padding-bottom: 38px;
+    }
+}
+
+.second_block{
+    background: #000;
+    padding-top: 27px;
+}
+
+.second_block_title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    font-family: "Russo One";
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 685px){
+    .second_block_title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+.second_block_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second_block_container > *:not(:last-child){
+    margin: 0px 0px 45px 0px;
+}
+
+.second_block_form_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.second_block_form_body > *:not(:last-child){
+    margin: 0px 0px 9px 0px;
+}
+
+.second_block_form{
+    width: 75%;
+}
+
+.second_block_input_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.second_block_input_label{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: "Russo One";
+    color: white;
+    margin: 0px 0px 9px 0px;
+}
+
+.input{
+    width: 100%;
+    height: 52px;
+    background: #8D8D8D;
+    border-radius: 10px;
+    border: 1px solid #8D8D8D;
+}
+
+.second_block_button{
+    background: #09A2F9;
+    border-radius: 4px;
+    width: 238px;
+    height: 54px;
+    border: 1px solid #09A2F9;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: "Russo One";
+    color: white;
+    cursor: pointer;
+}
+
+.fifth_block{
+    width: 100%;
+    padding-top: 124px;
+    background: #000;
+}
+
+.fifth_block_container_first_part{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fifth_block_logo_and_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fifth_block_logo_and_text > *:not(:last-child){
+    margin: 0px 0px 23.11px 0px;
+}
+
+.fifth_block_logo{
+    width: 182px;
+    height: 71px;
+    position: relative;
+}
+
+.fifth_block_logo_image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.fifth_block_logo_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.fifth_block_text{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Russo One";
+    line-height: 28px;
+    letter-spacing: 1.44px;
+    color: white;
+    text-align: center;
+    width: 367.25px;
+}
+
+.fifth_block_information > *:not(:last-child){
+    margin: 0px 0px 63px 0px;
+}
+
+.fifth_block_information_title{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 38px;
+    color: #09A2F9;
+}
+
+.fifth_block_information_list{
+    position: relative;
+    right: 39px;
+}
+
+.fifth_block_information_list > *:not(:last-child){
+    margin: 0px 0px 23px 0px;
+}
+
+.fifth_block_information_link{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 29px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.fifth_block_information_link:hover{
+    text-decoration: underline;
+}
+
+.fifth_block_email{
+    padding-right: 15px;
+}
+
+.fifth_block_email_title{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 38px;
+    color: #09A2F9;
+    margin: 0px 0px 63px 0px;
+}
+
+.form_body_1{
+    margin: 0px 0px 25px 0px;
+}
+
+.fifth_block_input_email{
+    width: 335px;
+    height: 66px;
+    background: #707070;
+    mix-blend-mode: normal;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Agency FB";
+    line-height: 29px;
+    color: #FAFAFA;
+    -webkit-mix-blend-mode: normal;
+    opacity: 0.24;
+    padding-left: 15px;
+}
+
+.fifth_block_email_button_wrapper{
+    width: 157px;
+    height: 58px;
+    background: #09A2F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fifth_block_email_button_link{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    color: #FAFAFA;
+}
+
+.line_separator_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line_separator{
+    border: 1px solid white;
+    height: 0px;
+    margin: 58px 0px 0px 0px;
+    width: 90%;
+}
+
+.fifth_block_email_button_wrapper_wrapper{
+    width: 352px;
+}
+
+@media (max-width: 1060px){
+    .fifth_block_container_first_part > *:not(:last-child){
+        margin: 0px 32px 0px 0px;
+    }
+}
+
+@media (max-width: 978px){
+    .fifth_block_container_first_part > *:not(:last-child){
+        margin: 0px 0px 45px 0px;
+    }
+    .fifth_block_container_first_part{
+        justify-content: center;
+    }
+    .fifth_block_logo_and_text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .fifth_block_information{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .fifth_block_email{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .fifth_block_information_list{
+        position: relative;
+        left: -20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fifth_block_information_link{
+        text-align: center;
+    }
+    .fifth_block_email_button_wrapper{
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 470px){
+    .fifth_block_text{
+        width: 298px;
+    }
+}
+
+@media (max-width: 414px){
+    .fifth_block_input_email{
+        width: 278px;
+    }
+    .fifth_block_email_button_wrapper_wrapper{
+        width: 292px;
+    }
+    .line_separator{
+        width: 85%;
+    }
+}
+
+@media (max-width: 330px){
+    .fifth_block_input_email{
+        width: 260px;
+    }
+    .fifth_block_email_button_wrapper_wrapper{
+        width: 278px;
+    }
+}
+
+@media (max-width: 320px){
+    .fifth_block_text{
+        width: 280px;
+    }
+}
+
+.footer{
+    background: #000;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    width: 100%;
+}
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_container_first_part{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.footer_copyright{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Agency FB";
+    line-height: 24px;
+    color: #909090;
+    margin: 0px 42px 0px 0px;
+}
+
+.footer_copyright > span{
+    font-family: "Russo One";
+}
+
+.footer_phone_link{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Agency FB";
+    line-height: 24px;
+    color: #909090;
+    margin: 0px 43px 0px 0px;
+}
+
+.footer_email_link{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Agency FB";
+    line-height: 24px;
+    color: #909090;
+    margin: 0px 79.05px 0px 0px;
+}
+
+.footer_location_link{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Russo One";
+    line-height: 24px;
+    color: #909090;
+}
+
+.footer_container_second_part{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.footer_container_second_part > *:not(:last-child){
+    margin: 0px 25px 0px 0px;
+}
+
+@media (max-width: 978px){
+    .footer_container > *{
+        flex: 0 1 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .footer_container > *:not(:last-child){
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+@media (max-width: 740px){
+    .footer_container_first_part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_container_first_part > *:not(:last-child){
+        margin: 0px 0px 23px 0px;
+    }
+    .footer_copyright{
+        text-align: center;
+        margin: 0px
+    }
+    .footer_phone_link{
+        text-align: center;
+        margin: 0px
+    }
+    .footer_email_link{
+        text-align: center;
+        margin: 0px
+    }
+    .footer_location_link{
+        text-align: center;
+        margin: 0px
+    }
+}
